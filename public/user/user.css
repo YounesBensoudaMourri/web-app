@@ -1,0 +1,167 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: large;
+}
+
+h2 {
+  font-size: medium;
+}
+
+
+button {
+  padding: 0.3rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid 1px #1da1f2;
+  border-radius: 0.75rem;
+  background-color: #1da1f2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d7fcf;
+}
+
+button.secondary {
+  background-color: white;
+  color: #1da1f2;
+}
+
+button.secondary:hover {
+  background-color: #f1f1f1;
+}
+
+input {
+  background-color: #e6ecf0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input:focus {
+  background-color: white;
+  border: 1px solid #ccd6dd;
+}
+
+
+.brand {
+  color: #3b5998;
+  font-weight: 700;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccd6dd;
+  background-color: white;
+}
+
+#header .widthContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  font-weight: 600;
+}
+
+#header input {
+  font-size: 1rem;
+  width: 150px;
+}
+
+#header #loginForm {
+  display: flex;
+  align-items: center;
+}
+
+#header #loginForm > *:not(last-of-type) {
+  margin-right: 1rem;
+}
+
+.widthContainer {
+  flex-grow: 1;
+  max-width: 1280px;
+}
+
+
+/* Editable part of the app */ 
+
+.editableInputContainer {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.editableInputContainer label {
+  margin-right: 1rem;
+}
+
+.editableInputContainer > div {
+  min-width: 100px;
+}
+
+.editableText {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.editableText > span {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  background-color: #e6ecf0;
+  padding: 0.2rem;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.editableInput {
+  width: 100%;
+}
+
+.paper {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+#editPanel {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+#editPanel > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 0;
+}
+
+#editPanel label {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* adding the name css */ 
+
+
+
