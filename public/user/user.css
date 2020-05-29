@@ -14,6 +14,9 @@ body {
 
 h1 {
   font-size: large;
+   color: #4CAF50;
+   text-align: center;
+   
 }
 
 h2 {
@@ -25,24 +28,24 @@ button {
   padding: 0.3rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  border: solid 1px #1da1f2;
+  border: solid 1px white;
   border-radius: 0.75rem;
-  background-color: #1da1f2;
+  background-color: #4CAF50;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #1d7fcf;
+  background-color: #4CAF50;
 }
 
 button.secondary {
   background-color: white;
-  color: #1da1f2;
+  color: #4CAF50;
 }
 
 button.secondary:hover {
-  background-color: #f1f1f1;
+  background-color: #4CAF50;
 }
 
 input {
@@ -60,7 +63,7 @@ input:focus {
 
 
 .brand {
-  color: #3b5998;
+  color: #4CAF50;
   font-weight: 700;
 }
 
@@ -102,66 +105,50 @@ input:focus {
   max-width: 1280px;
 }
 
-
-/* Editable part of the app */ 
-
-.editableInputContainer {
-  display: flex;
-  align-items: center;
-  margin: 2rem 0;
+userPage {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.editableInputContainer label {
-  margin-right: 1rem;
+
+.profile {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
-.editableInputContainer > div {
-  min-width: 100px;
+.userInfo {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: 10px;
+   width: 100%;
 }
 
-.editableText {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+   max-width: 300px;
+   margin: 5px;
+   
 }
 
-.editableText > span {
-  flex-grow: 1;
-  margin-right: 0.5rem;
-  background-color: #e6ecf0;
-  padding: 0.2rem;
-  font-size: 1rem;
-  min-width: 200px;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.editableInput {
-  width: 100%;
+img {
+   margin: 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
-.paper {
-  padding: 1rem;
-  background-color: white;
-  border-radius: 0.6rem;
-  box-shadow: 1px 1px 1px 1px lightgray;
+p {
+   margin: 5px;
 }
 
-#editPanel {
-  width: 100%;
-  padding: 0.5rem 1.5rem;
+.label {
+   color: black;
 }
-
-#editPanel > div {
-  display: flex;
-  flex-direction: column;
-  margin: 1.25rem 0;
-}
-
-#editPanel label {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-/* adding the name css */ 
-
-
-
