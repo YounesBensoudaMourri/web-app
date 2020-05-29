@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+
+   <!-- These two lines provide automatic page and style reloading when files change -->
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="/lib/client/updater.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+   <header id="header">
+      <div class="widthContainer">
+         <h1 class="brand"> Papers explained</h1>
+         <form id="loginForm">
+            <input name="userid" placeholder="User ID">
+            <input name="password" placeholder="password">
+            <button type="submit" id="login">Login</button>
+         </form>
+      </div>
+   </header>
+   
+   
+   <div class="widthContainer">
+      <section id="sidebar">
+         <section id="editPanel" class="paper">
+            <h2>Edit Profile</h2>
+            <div>
+               <label>User ID:</label>
+               <div id="idContainer"></div>
+            </div>
+            <div>
+               <label for="nameInput">Display Name:</label>
+               <div id="nameContainer"></div>
+            </div>
+         </section>
+
+      </section>
+   </div>
+
+
+
+</body>
+
+</html>
