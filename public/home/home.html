@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+
+   <!-- These two lines provide automatic page and style reloading when files change -->
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="/lib/client/updater.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+   <hbar>
+      <div id="centerl">
+        <span class="infoFont"> <a href = "../../user/user.html" class="infoFont"> Profile </a></span>
+         <span class="infoFont"> <a href = "" class="infoFont"> Home </a></span>
+      </div>
+      <div id="centerl">
+         <span class="infoFont">            
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" class = "search"><i class="fa fa-search"></i></button> 
+         </span>
+         <span class="infoFont"><a href = "../../user/user_edit.html" class = "infoFont">Settings</a></span>
+         <span class="infoFont"><a href = "../../index.html" class = "infoFont">Logout</a> </span>
+      </div>
+   </hbar>
+   <h1> All Research Papers</h1>
+   <papers>
+      <div class="card">
+         <img src="headshot.jpg" width="200" height="200">
+         <p><b> Title:</b> Deeplearning Chatbot</p>
+         <p><b> Date:</b> May 2020</p>
+         <p><b> Conference:</b> IEEE</p>
+         <p><b> Description:</b> Summarizer</p>
+      </div>
+      <div class="card">
+         <img src="headshot.jpg" width="200" height="200">
+         <p><b> Title:</b> Fluid transefer</p>
+         <p><b> Date:</b> May 2020</p>
+         <p><b> Conference:</b> IEEE</p>
+         <p><b> Description:</b> State of the art in question Answering</p>
+      </div>
+      <div class="card">
+         <img src="headshot.jpg" width="200" height="200">
+         <p><b> Title:</b> Sentiment model</p>
+         <p><b> Date:</b> May 2020</p>
+         <p><b> Conference:</b> NeurIPS</p>
+         <p><b> Description:</b> product reviews </p>
+      </div>
+      <div class="card">
+         <img src="headshot.jpg" width="200" height="200">
+         <p><b> Title:</b> Attention Model</p>
+         <p><b> Date:</b> May 2020</p>
+         <p><b> Conference:</b> ICL</p>
+         <p><b> Description:</b> Faster training</p>
+      </div>
+   </papers>
+
+
+
+</body>
+
+</html>

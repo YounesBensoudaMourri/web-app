@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -66,7 +73,7 @@
 }
 
 
-.container {
+.container{
   position: relative;
   z-index: 1;
   max-width: 300px;
@@ -105,4 +112,43 @@
 
 .container .info span .fa {
   color: #EF3B3A;
+}
+
+hbar {
+  color: black;
+  background-color: #4CAF50;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  height: 25px;
+}
+
+span.infoFont {
+  padding: 5px;
+   font-size: 18px;
+   
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover{
+  color: #23527c;
+  text-decoration: underline;
+
+}
+
+a.infoFont{
+   color:white;
+}
+
+#centerl{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   margin: 10px;
+   font: 16px;
 }
