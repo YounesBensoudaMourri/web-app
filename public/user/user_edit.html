@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="user_edit.css">
+    <!-- <script src="index.js" defer></script> -->
+</head>
+
+<body>
+    <header id="header">
+    </header>
+
+    <h1>Update Profile</h1>
+    <section>
+        <div class="form">
+            <h2>About me </h2>
+            <form>
+                <textarea name="aboutme" id="about" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="form">
+            <h2>Information</h2>
+            <form>
+                <label for="name">Name:<input type="text"></label>
+                <label for="education">Education:<input type="text"></label>
+                <label for="email">Email:<input type="email"></label>
+                <label for="phone">Phone:<input type="tel"></label>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="form">
+            <h2>Trending</h2>
+            <form>
+                <label for="following">Following:<input type="number"></label>
+                <label for="followers">followers:<input type="number"></label>
+                <label for="googleIdx">Google Index:<input type="number"></label>
+                <label for="citations">Citations:<input type="number"></label>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="form">
+            <h2>paper Videos</h2>
+            <form>
+                <label for="paper">paper 1:<input type="text"></label>
+                <label for="paper">paper 2:<input type="text"></label>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
