@@ -4,6 +4,10 @@ import GoogleSignin from "./GoogleSignin.js";
 
 // Globals
 
+ERRORS = {
+   LOGIN_USER: 0,
+   CREATE_USER: 1
+};
 /* Make sure to get your own client ID. This one will be deleted soon */
 const CLIENT_ID = "723067440195-8unb39sobjavlo60d873s74mufgsdfr7.apps.googleusercontent.com";
 
@@ -70,8 +74,17 @@ export default class App {
 
    }
 
-   _onError() {
-      alert("Error while signing in");
+   _onError(error) {
+      switch (error) {
+         case ERROR.LOGIN_USER: {
+            alert("Error while signing in");
+            break;
+         }
+         case ERROR.CREATE_USER: {
+            alert("Error while creating the user");
+            break;
+         }
+      }
    }
 
    _onLogin() {
@@ -85,7 +98,7 @@ export default class App {
       if (await this._checkUserExists(username, password))
          this._loadProfile();
       else {
-         this._onError();
+         this._onError(ERRORS.LOGIN_USER);
       }
    }
 
@@ -111,7 +124,7 @@ export default class App {
 
    }
    async _checkUserExists(username, password) {
-      this._user = User.loadUser(username, password);
+      this._user = await User.loadUser(username, password);
       if (this._user)
          return true;
       return false;
