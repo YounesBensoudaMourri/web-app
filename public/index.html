@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="index.css">
-  <script src="index.js" defer></script>
+  <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
@@ -31,6 +31,7 @@
          </span>
          <span class="infoFont"><a href = "/user/user_edit.html" class = "infoFont">Settings</a></span>
          <span class="infoFont"><a href = "" class = "infoFont">Login</a> </span>
+          <button type="submit" class = "hidden" id = "signout">logout</button> 
       </div>
    </hbar>
     <div class="login-page">
@@ -46,7 +47,7 @@
         <form class="" id="log">
           <input type="text" placeholder="username">
           <input type="password" placeholder="password">
-          <button>Login</button>
+          <button id = "login">Login</button>
           <p class="isRegistered"> Not registered?<a id="signInLink" href="#">Register</a></p>
         </form>
       </div>

@@ -1,3 +1,6 @@
+import App from "./app.js";
+
+
 const main = () => {
 
     let signIn = document.getElementById("signInLink");
@@ -11,6 +14,10 @@ const main = () => {
         document.getElementById("log").classList.remove('hidden');
         document.getElementById("create").classList.add('hidden');
     })
+   
+   
+   let app = new App();
+   app.setup();
 }
 
-main()
+main();

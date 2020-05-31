@@ -18,8 +18,6 @@ class App {
    setup() {
       this._loginForm = document.querySelector("#loginForm");
       this._loginForm.login.addEventListener("click", this._onLogin);
-      this._loginForm.listUsers.addEventListener("click", this._onListUsers);
-
       this._postForm = document.querySelector("#postForm");
 
       //TODO: Complete the setup of remaining components
