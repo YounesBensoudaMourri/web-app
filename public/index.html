@@ -8,8 +8,8 @@
   <!-- These two lines provide automatic page and style reloading when files change -->
   <script src="/socket.io/socket.io.js"></script>
   <script src="/lib/client/updater.js" defer></script>
- <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="index.css">
   <script type="module" src="index.js" defer></script>
@@ -20,35 +20,35 @@
   </header>
 
   <main>
-   <hbar>
+    <hbar>
       <div id="centerl">
 
       </div>
       <div id="centerl">
-         <span class="infoFont">            
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit" class = "search"><i class="fa fa-search"></i></button> 
-         </span>
-         <span class="infoFont"><a href = "/user/user_edit.html" class = "infoFont">Settings</a></span>
-         <span class="infoFont"><a href = "" class = "infoFont">Login</a> </span>
-          <button type="submit" class = "hidden" id = "signout">logout</button> 
+        <span class="infoFont">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit" class="search"><i class="fa fa-search"></i></button>
+        </span>
+        <span class="infoFont"><a href="/user/user_edit.html" class="infoFont">Settings</a></span>
+        <span class="infoFont"><a href="" class="infoFont">Login</a> </span>
+        <button type="submit" class="hidden" id="signout">logout</button>
       </div>
-   </hbar>
+    </hbar>
     <div class="login-page">
       <div class="form">
-        <form class="hidden" id="create">
-          <input type="text" placeholder="name">
-          <input type="email" placeholder="email">
-          <input type="password" , placeholder="password">
-          <button>Create</button>
+        <form class="hidden" id="create-form">
+          <input type="text" name="username" placeholder="name">
+          <input type="email" name="email" placeholder="email">
+          <input type="password" name="password" placeholder="password">
+          <button id="create-btn">Create</button>
 
           <p class="isRegistered"> Already registered?<a id="createLink" href="#">Sign In</a></p>
         </form>
-        <form class="" id="log">
-          <input type="text" placeholder="username">
-          <input type="password" placeholder="password">
-          <button id = "login">Login</button>
-          <p class="isRegistered"> Not registered?<a id="signInLink" href="#">Register</a></p>
+        <form class="" id="login-form">
+          <inpuSignInt type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button id="login-btn">Login</button>
+            <p class="isRegistered"> Not registered?<a id="signInLink" href="#">Register</a></p>
         </form>
       </div>
     </div>
