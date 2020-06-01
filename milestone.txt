@@ -1,0 +1,29 @@
+CS193X Final Project Milestone
+=============================
+
+Project Name: Research Papers
+Your Name: Younes Bensouda Mourri and Ouassim Khebzegga
+Your SUNetID: younes, ouassimk 
+
+Overview
+--------
+We built the front end for the app. However, we would like to know how to structure the css and the html going forward. Since this is a relatively big project, we want to make sure we follow the best practices before we start digging deep into the javascript and the back end. We will do login/logout, user profiles, and feed for the final project. Also any tips for us to preprocess videos and make them in the same format will be greatly appreciated. This is a project we plan to continue working on even after, so any advice would be appreciated. 
+
+Project Changes
+---------------
+Everything is going as planned. Since we are now relatively done with the front end, we will work on the back end. 
+
+API
+---
+We will have the following option, login/logout, news feed, commenting, and taking the actual mini course. We will use mongodb for the APIs. We plan to use the google sign in api too. 
+
+External libraries and code
+---------------------------
+So far we tried to not use any libraries, but we might need some to upload jupyter notebooks, and grade them. Do you have any advice on how we can do that?  
+
+Collaboration and resources
+---------------------------
+Since Ouassim and I plan to build the entire fully functional website, we are working on this together. We both worked on the html and css by doing different pages. Now we will both work on the backend. Ouassim will populate the user profiles and edit them. I will populate the feed and the followers. 
+
+-------------
+Really enjoying the class. Any tips for the ability to upload and grade jupyter notebooks would be greatly appreciated!

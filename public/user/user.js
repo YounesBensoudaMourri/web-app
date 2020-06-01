@@ -1,4 +1,5 @@
 import EditableText from "./EditableText.js";
+import apiRequest from "../api.js"
 
 export default class User {
    constructor(data) {

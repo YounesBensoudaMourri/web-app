@@ -1,10 +1,10 @@
 import EditableText from "./user/EditableText.js";
 import GoogleSignin from "./GoogleSignin.js";
-
+import User from "./user/user.js";
 
 // Globals
 
-ERRORS = {
+const ERRORS = {
    LOGIN_USER: 0,
    CREATE_USER: 1
 };
@@ -76,24 +76,25 @@ export default class App {
 
    _onError(error) {
       switch (error) {
-         case ERROR.LOGIN_USER: {
-            alert("Error while signing in");
-            break;
-         }
-         case ERROR.CREATE_USER: {
-            alert("Error while creating the user");
-            break;
-         }
+         case ERROR.LOGIN_USER:
+            {
+               alert("Error while signing in");
+               break;
+            }
+         case ERROR.CREATE_USER:
+            {
+               alert("Error while creating the user");
+               break;
+            }
       }
    }
 
-   _onLogin() {
+   async _onLogin() {
       event.preventDefault();
       let _loginForm = document.getElementById("login-form");
-      let (
-         username = _loginForm.username.value,
-         password = _loginForm.password.value
-      );
+      let username = _loginForm.username.value;
+      let password = _loginForm.password.value;
+
 
       if (await this._checkUserExists(username, password))
          this._loadProfile();
@@ -108,14 +109,13 @@ export default class App {
       document.querySelector("#profile").classList.add("hidden");
    }
 
-   _onCreate() {
+   async _onCreate() {
       event.preventDefault();
       let _createForm = document.getElementById("create-form");
-      let (
-         username = _createForm.username.value,
-         password = _createForm.password.value,
-         email = _createForm.email.value
-      );
+      let username = _createForm.username.value;
+      let password = _createForm.password.value;
+      let email = _createForm.email.value;
+
       if (await this._checkUserExists(username, password))
          this._onError(ERRORS.LOAD_USER);
       else {
